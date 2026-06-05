@@ -1,0 +1,17 @@
+{
+  "name": "smarthome-energy-backend",
+  "version": "1.0.0",
+  "description": "Backend MQTT, API REST e dashboard para projeto SmartHome Energy em AWS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mqtt": "latest",
+    "pg": "latest"
+  }
+}

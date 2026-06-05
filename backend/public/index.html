@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartHome Energy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header"><div><h1>SmartHome Energy</h1><p>Dashboard de monitoramento energetico residencial</p></div><span id="statusApi" class="status">Conectando...</span></header>
+  <main>
+    <section class="cards"><div class="card"><h2>Potencia Total</h2><p id="potenciaTotal">-- W</p></div><div class="card"><h2>Custo Estimado</h2><p id="custoTotal">R$ --</p></div><div class="card"><h2>Total de Leituras</h2><p id="totalLeituras">--</p></div><div class="card"><h2>Ultima Atualizacao</h2><p id="ultimaAtualizacao">--</p></div></section>
+    <section class="section"><h2>Consumo recente</h2><div id="grafico" class="grafico"></div></section>
+    <section class="section"><h2>Ultimas leituras</h2><div class="table-wrapper"><table><thead><tr><th>Horario</th><th>Comodo</th><th>Dispositivo</th><th>Potencia</th><th>Presenca</th><th>Temperatura</th><th>Luminosidade</th><th>Custo</th></tr></thead><tbody id="leiturasBody"></tbody></table></div></section>
+    <section class="section"><h2>Alertas e sugestoes</h2><div id="alertasContainer" class="alertas"></div></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
